@@ -20,10 +20,10 @@
     }
   },
   "dataFileExtension" : "xml",
-  "updateTime" : "2025-04-15T17:10:58.280Z",
+  "updateTime" : "2025-04-15T17:35:06.976Z",
   "objectRefs" : [ {
     "id" : "0DNY5VL4WcWk6U6ElxWfmv",
-    "name" : "mt_signet_store_feed",
+    "name" : "mt_signet_store_feeds",
     "type" : "MTT",
     "metadata" : {
       "modelVersion" : {

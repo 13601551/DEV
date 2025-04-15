@@ -12,8 +12,8 @@
       <types1:ProcessGroup/>
       <types1:CreatedBy>slangston_SIGD2</types1:CreatedBy>
       <types1:CreationDate>2022-04-21T17:21:35Z</types1:CreationDate>
-      <types1:ModifiedBy>13601551@jewels.com.SAML2</types1:ModifiedBy>
-      <types1:ModificationDate>2025-04-15T17:08:10Z</types1:ModificationDate>
+      <types1:ModifiedBy>13603493@jewels.com.SAML</types1:ModifiedBy>
+      <types1:ModificationDate>2025-04-15T17:15:21Z</types1:ModificationDate>
       <types1:PublicationStatus>out-of-date</types1:PublicationStatus>
       <types1:PublishedBy>mchellu_SIGD2</types1:PublishedBy>
       <types1:PublicationDate>2022-04-21T17:33:31Z</types1:PublicationDate>
@@ -41,7 +41,7 @@
                </parameter>
             </input>
             <tempFields>
-               <field description="" name="Signet Feeds" type="reference">
+               <field description="" name="Signet Feed" type="reference">
                   <options>
                      <option name="referenceTo">$po:mt-signet-store-feed-0DNY5VL4WcWk6U6ElxWfmv</option>
                      <option name="required">false</option>
@@ -69,14 +69,14 @@
                </start>
                <assignment id="ktek0jwr">
                   <title>Assign Current tme in UTC</title>
-                  <operation source="formula" to="temp.Signet Feeds[1]/inout[1]/utc_time">
+                  <operation source="formula" to="temp.Signet Feed[1]/inout[1]/utc_time">
                      <expression language="XQuery">current-dateTime()</expression>
                   </operation>
                   <link id="ktek0jx0" targetId="ktek0jxm"/>
                </assignment>
                <eventContainer id="ktek0jxm">
                   <service id="ktek0jwz">
-                     <title>Signet Feeds</title>
+                     <title>Signet Feed</title>
                      <serviceName>ICSExecuteDataTask</serviceName>
                      <serviceGUID/>
                      <serviceInput>
@@ -87,38 +87,38 @@
                         <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
                         <parameter name="Has Inout Parameters" source="constant" updatable="true">true</parameter>
                         <parameter name="taskField" source="nested">
-                           <operation source="field" to="mt-signet-store-feed-0DNY5VL4WcWk6U6ElxWfmv">temp.Signet Feeds</operation>
+                           <operation source="field" to="mt-signet-store-feed-0DNY5VL4WcWk6U6ElxWfmv">temp.Signet Feed</operation>
                         </parameter>
                      </serviceInput>
                      <serviceOutput>
-                        <operation source="field" to="temp.Signet Feeds/output/Object_Name">Object Name</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Run_Id">Run Id</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Log_Id">Log Id</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Task_Id">Task Id</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Task_Status">Task Status</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Success_Source_Rows">Success Source Rows</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Failed_Source_Rows">Failed Source Rows</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Success_Target_Rows">Success Target Rows</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Failed_Target_Rows">Failed Target Rows</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Start_Time">Start Time</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/End_Time">End Time</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/Error_Message">Error Message</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/TotalTransErrors">Total Transformation Errors</operation>
-                        <operation source="field" to="temp.Signet Feeds/output/FirstErrorCode">First Error Code</operation>
-                        <operation source="field" to="temp.Signet Feeds/inout/utc_time">utc_time</operation>
-                        <operation source="field" to="temp.Signet Feeds/inout/last_updated_time">last_updated_time</operation>
-                        <operation source="field" to="temp.Signet Feeds/inout/LAST_UPDATE_DATE">LAST_UPDATE_DATE</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Task_Id">Task Id</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Task_Status">Task Status</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.Signet Feed/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.Signet Feed/output/Error_Message">Error Message</operation>
+                        <operation source="field" to="temp.Signet Feed/output/TotalTransErrors">Total Transformation Errors</operation>
+                        <operation source="field" to="temp.Signet Feed/output/FirstErrorCode">First Error Code</operation>
+                        <operation source="field" to="temp.Signet Feed/inout/utc_time">utc_time</operation>
+                        <operation source="field" to="temp.Signet Feed/inout/last_updated_time">last_updated_time</operation>
+                        <operation source="field" to="temp.Signet Feed/inout/LAST_UPDATE_DATE">LAST_UPDATE_DATE</operation>
                      </serviceOutput>
                   </service>
                   <link id="ktek0jx1" targetId="c"/>
                   <events>
-                     <catch faultField="temp.Signet Feeds/fault"
+                     <catch faultField="temp.Signet Feed/fault"
                             id="ktek0jxk"
                             interrupting="true"
                             name="error">
                         <suspend/>
                      </catch>
-                     <catch faultField="temp.Signet Feeds/fault"
+                     <catch faultField="temp.Signet Feed/fault"
                             id="ktek0jxl"
                             interrupting="true"
                             name="warning"/>
@@ -436,5 +436,5 @@
       <types1:GUID>7hZvCdpO0yqevhBq1smvCZ</types1:GUID>
       <types1:DisplayName>tf_signet_store_feed</types1:DisplayName>
    </types1:Item>
-   <types1:CurrentServerDateTime>2025-04-15T17:10:58.07Z</types1:CurrentServerDateTime>
+   <types1:CurrentServerDateTime>2025-04-15T17:35:06.815Z</types1:CurrentServerDateTime>
 </aetgt:getResponse>
