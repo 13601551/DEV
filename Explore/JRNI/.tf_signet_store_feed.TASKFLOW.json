@@ -1,0 +1,47 @@
+{
+  "objectInfo" : {
+    "id" : "7hZvCdpO0yqevhBq1smvCZ",
+    "name" : "tf_signet_store_feed",
+    "type" : "TASKFLOW",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "SB7O2htghGZ5i4r-gt-4255208-2022-04-21T17:21:34.724Z::tf.xml"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  },
+  "dataFileExtension" : "xml",
+  "updateTime" : "2025-04-15T17:10:58.280Z",
+  "objectRefs" : [ {
+    "id" : "0DNY5VL4WcWk6U6ElxWfmv",
+    "name" : "mt_signet_store_feed",
+    "type" : "MTT",
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "015XIW0Z000000000002"
+      },
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    },
+    "path" : "/Explore/JRNI"
+  } ],
+  "readableFileExtension" : null,
+  "readableFilePresent" : false
+}
